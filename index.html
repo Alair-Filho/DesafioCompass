@@ -14,80 +14,95 @@
     </header>
     <main>
         <section class="welcome-section">
-            <aside id="container-welcome">
-                <h2 class="colorh2"><span class="h2color">Welcome to </span>Project Manager</h2>
-                <p class="paragrafo1">Get your projects and ideas in order, all in one place!Sing up now and discover a smarter way to manage you work with efficiency and teamwork</p>
-                <a class="btnLogin" href="#"><button id="btn-2">Get Started</button></a>
-            </aside>
-            <article id="image-welcome">
-                <img id="imgMoca" src="img/image 1.png" alt="imagem ilustrativa">
-            </article>
+            <div class="section-wrapper">
+                <div class="welcome-content">
+                    <aside id="container-welcome">
+                        <h2 class="colorh2"><span class="h2color">Welcome to </span>Project Manager</h2>
+                        <p class="paragrafo1">Get your projects and ideas in order, all in one place!Sing up now and discover a smarter way to manage you work with efficiency and teamwork</p>
+                        <a class="btnLogin" href="#"><button id="btn-2">Get Started</button></a>
+                    </aside>
+                    <div id="image-welcome">
+                        <img id="imgMoca" src="img/image 1.png" alt="imagem ilustrativa">
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="manage">
-            <aside id="container-manage">
-                <aside id="container-manage-2">
-                    <h2>The manager</h2>
-                    <p>Project Manager is a tool desigend to make organizing and tracking your daily tasck easier than ever. With a clean, intuitive interface and powerful features, you can plan, prioritize, and keep tabs on you projects-whether you're working solo or with a team</p>
-                    <a class="bntMore" href="#"><button id="btn-3">Learn More</button></a>
-                    <ul class="imgList">
-                        <li><img src="img/image 2.png" alt="imagem ilustrativa"></li>
-                        <li><img src="img/image 3.png" alt="imagem ilustrativa"></li>
-                        <li><img src="img/image 4.png" alt="imagem ilustrativa"></li>
-                    </ul>
-                </aside>
-            </aside>
+            <div class="section-wrapper">
+                <div id="container-manage">
+                    <div id="container-manage-2">
+                        <h2>The manager</h2>
+                        <p>Project Manager is a tool desigend to make organizing and tracking your daily tasck easier than ever. With a clean, intuitive interface and powerful features, you can plan, prioritize, and keep tabs on you projects-whether you're working solo or with a team</p>
+                        <a class="bntMore" href="#"><button id="btn-3">Learn More</button></a>
+                        <ul class="imgList">
+                            <li><img src="img/image 2.png" alt="imagem ilustrativa"></li>
+
+                            <li><img src="img/image 3.png" alt="imagem ilustrativa"></li>
+
+                            <li><img src="img/image 4.png" alt="imagem ilustrativa"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="sectionFeatures">
-            <aside>
-                <h2>Features Tools</h2>
-                <p>Tools to enhace your project management</p>
-                <button id="btn-4">View All</button>
-            </aside>
-            <ul id="tools">
-                <li><img src="img/Icon.png" alt="Icone">
-                    <h3>Task Scheduler</h3>
-                    <p>Plan and schedule tasks</p>
-                </li>
-                <li><img src="img/Icon (1).png" alt="icone">
-                    <h3>Deadline Tracker</h3>
-                    <p>Keep track of project deadlines</p>
-                </li>
-                <li><img src="img/Icon (2).png" alt="icone">
-                <h3>Communication Hub</h3>
-                <p>Centralized team communication</p>
-                </li>
-                <li><img src="img/Icon (3).png" alt="icone">
-                <h3>Progress Report</h3>
-                <p>Track project progress</p>
-                </li>
-            </ul>
+            <div class="section-wrapper">
+                <aside id="h2Featured">
+                    <h2>Features Tools</h2>
+                    <p>Tools to enhace your project management</p>
+                    <button id="btn-4">View All</button>
+                </aside>
+                <ul id="tools">
+                    <li><img src="img/Icon.png" alt="Icone">
+                        <h3>Task Scheduler</h3>
+                        <p>Plan and schedule tasks</p>
+                    </li>
+                    <li><img src="img/Icon (1).png" alt="icone" >
+                        <h3>Deadline Tracker</h3>
+                        <p>Keep track of project deadlines</p>
+                    </li>
+                    <li><img src="img/Icon (2).png" alt="icone">
+                    <h3>Communication Hub</h3>
+                    <p>Centralized team communication</p>
+                    </li>
+                    <li><img src="img/Icon (3).png" alt="icone">
+                    <h3>Progress Report</h3>
+                    <p>Track project progress</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="login-container">
-            <div>
-                <h2>Subscribe to Updates</h2>
-                <p>Stay informed with our lastet updates</p>
+            <div class="section-wrapper">
+                <DIV id="principalsub">
+                    <div id="divSubscribe">
+                        <h2>Subscribe to Updates</h2>
+                        <p>Stay informed with our lastet updates</p>
+                    </div>
+                    <div id="divsub2">
+                        <form action="/login" method="post">
+                            <ul id="inscreva-se">
+                                <li>
+                                    <h5>Email</h5>
+                                    <input type="email" name="email" placeholder="Enter your email" required>
+                                    <div class="description">We promisse not to spam</div>
+                                </li>
+                                <li>
+                                    <h5>Name</h5>
+                                    <input type="text" name="name" placeholder="Enter your name" required>
+                                </li>
+                                <li>
+                                    <button type="submit">Subscribe</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </DIV>
             </div>
-            <h2>Login</h2>
-            <form action="/login" method="post">
-                <ul>
-                    <li>
-                        <input type="email" name="email" placeholder="Enter your email" required>
-                        <div class="description">We promisse not to spam</div>
-                    </li>
-    
-                    <li>
-                        <input type="text" name="name" placeholder="Enter your name" required>
-                    </li>
-                    <li>
-                        <button type="submit">Subscribe</button>
-                    </li>
-                </ul>
-            </form>
         </section>
-
     </main>
 
     <footer>

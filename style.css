@@ -1,125 +1,206 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     margin: 0;
     height: 100%;
     overflow: hidden;
-}
-
-main{
-    background-color: green;
-    align-items: center
-
-}
-
-#cabecalho {
-    /* background-color: #331436; */
+  }
+  
+  main > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  #cabecalho {
+    background-color: #331436;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    color: #FFFFFF;
-    width: 100%;
-}
-#logo{
+    color: #ffffff;
+  }
+  
+  #logo {
     width: 50px;
     height: auto;
     top: 10px;
     left: 10px;
     margin-right: 30px;
-}
-#btn {
+  }
+  
+  #btn {
     margin-left: auto;
     padding: 10px 20px;
-    background-color: #CB4F57;
-    color: #FCF4B6;
+    background-color: #cb4f57;
+    color: #fcf4b6;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     width: 240px;
     height: 48px;
-}
-.btnLogin{
+  }
+  
+  .btnLogin {
     margin-left: auto;
-}
-.welcome-section{
+  }
+  
+  .welcome-section {
+    display: flex;
+    align-items: center;
+    background-color: #7a1745;
+    padding: 20px 0;
+  }
+  
+  .welcome-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    /* background-color: #7A1745; */
+    width: 100%;
+  }
   
-}
-.colorh2{
-    color: #FCF4B6;
+  .welcome-section img {
+    padding: 15px;
+  }
+  
+  .colorh2 {
+    color: #fcf4b6;
     font-size: 3.5em;
     white-space: nowrap;
-}
-.h2color{
-    color: #FFFFFF;
+  }
+  
+  .h2color {
+    color: #ffffff;
     white-space: nowrap;
     flex: 1;
     overflow: visible;
-}
-#container-welcome {
-    max-width: 50%
-}
-#container-welcome p{
-    color: #FFFFFF;
+  }
+  
+  #container-welcome p {
+    color: #ffffff;
     font-size: 1em;
-}
-#btn-2{
-    background-color: #CB4F57;
-    color: #FCF4B6;
+  }
+  
+  #btn-2 {
+    background-color: #cb4f57;
+    color: #fcf4b6;
     width: 240px;
     height: 48px;
-}
-#container-manage-2{
+  }
+  
+  #container-manage-2 {
     display: flex;
     flex-direction: column;
-    
-    
-    
-   
-    
-}
-#container-manage h2{
-    
+    max-width: 50%;
+  }
+  
+  #container-manage h2 {
     color: #000000;
     font-size: 3em;
-    
-    
-}
-
-#btn-3{
+  }
+  
+  .manage {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #btn-3 {
     margin-left: auto;
     padding: 10px 20px;
-    background-color:#331436;
-    color: #FFFFFF;
+    background-color: #331436;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     width: 240px;
     height: 48px;
-    
-}
-
-.imgList{
+  }
+  
+  .imgList {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    list-style: none;
 }
-
-.sectionFeatures{
-    background-color: #FCF4B6;
+.imgList img{
+    padding: 10px ;
+    margin-right:10px #D9D9D9;
+}
+  
+  .sectionFeatures {
+    background-color: #fcf4b6;
     text-align: center;
-}
-#tools{
+    color: #331436;
+  }
+  #h2Featured{
+    font-size: 2em;
+  }
+  #btn-4{
+    margin-left: auto;
+    padding: 10px 20px;
+    background-color: #331436;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 240px;
+    height: 48px;
+  }
+  #tools {
     display: flex;
     justify-content: center;
-}
-#tools img{
+    list-style: none;
+    margin: 6em;
+    justify-content: space-between;
+    }
+  #tools img {
     background-color: #331436;
-    width: 100px;
-    border-radius: 110px;
-}
+    width: 5em;
+    border-radius: 65px;
+    padding: 20px;
+    inline-size: 48px;
+    }
+    .login-container{
+        width: 100%;
+        max-width: 1200px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 2em;
+        justify-content: space-around;
+        color: #331436;
+        
+        
+    }
+    #divSubscribe{
+        
+        margin: 100px;
+        
+    }
+    #divsub2{
+        background-color: #fcf4b6;
+    }
+    #principalsub{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #divsub2 h5{
+        margin: 0;
+    }
+    .description{
+        font-size: 16px;
+        color: #0000008f;
+    }
+        
+
+    
+
+
+ 
