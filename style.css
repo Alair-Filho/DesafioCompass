@@ -1,24 +1,32 @@
-body, html {
-    margin: 0; 
-    padding: 0; 
-    height: 100%; 
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+main{
+    background-color: green;
+    align-items: center
+
 }
 
 #cabecalho {
-    background-color: #331436;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px 20px; 
+    /* background-color: #331436; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     color: #FFFFFF;
-    
+    width: 100%;
 }
-
 #logo{
     width: 50px;
     height: auto;
     top: 10px;
     left: 10px;
+    margin-right: 30px;
 }
 #btn {
     margin-left: auto;
@@ -31,40 +39,34 @@ body, html {
     width: 240px;
     height: 48px;
 }
-main {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: flex-start; 
-    padding: 20px; 
-    background-color: #7A1745;
+.btnLogin{
+    margin-left: auto;
+}
+.welcome-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* background-color: #7A1745; */
+  
 }
 .colorh2{
     color: #FCF4B6;
     font-size: 3.5em;
+    white-space: nowrap;
 }
 .h2color{
     color: #FFFFFF;
-    
+    white-space: nowrap;
+    flex: 1;
+    overflow: visible;
 }
-
-
-.welcome-section {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    width: 100%; 
-    max-width: 1200px; 
-    margin-bottom: 20px; 
-    
-}
-
 #container-welcome {
-    max-width: 50%; 
+    max-width: 50%
 }
 #container-welcome p{
     color: #FFFFFF;
-    font-size: 2em;
+    font-size: 1em;
 }
 #btn-2{
     background-color: #CB4F57;
@@ -72,19 +74,52 @@ main {
     width: 240px;
     height: 48px;
 }
-#image-welcome img {
-    max-width: 100%; 
-    height: auto; 
+#container-manage-2{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+   
+    
+}
+#container-manage h2{
+    
+    color: #000000;
+    font-size: 3em;
+    
+    
 }
 
-section {
-    text-align: center; 
-    width: 100%; 
-    margin: 20px 0; 
+#btn-3{
+    margin-left: auto;
+    padding: 10px 20px;
+    background-color:#331436;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 240px;
+    height: 48px;
+    
 }
 
-footer {
-    text-align: center; 
-    padding: 20px; 
-    background-color: #f8f9fa; 
+.imgList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionFeatures{
+    background-color: #FCF4B6;
+    text-align: center;
+}
+#tools{
+    display: flex;
+    justify-content: center;
+}
+#tools img{
+    background-color: #331436;
+    width: 100px;
+    border-radius: 110px;
 }
