@@ -1,0 +1,90 @@
+body, html {
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+}
+
+#cabecalho {
+    background-color: #331436;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    color: #FFFFFF;
+    
+}
+
+#logo{
+    width: 50px;
+    height: auto;
+    top: 10px;
+    left: 10px;
+}
+#btn {
+    margin-left: auto;
+    padding: 10px 20px;
+    background-color: #CB4F57;
+    color: #FCF4B6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 240px;
+    height: 48px;
+}
+main {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    padding: 20px; 
+    background-color: #7A1745;
+}
+.colorh2{
+    color: #FCF4B6;
+    font-size: 3.5em;
+}
+.h2color{
+    color: #FFFFFF;
+    
+}
+
+
+.welcome-section {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin-bottom: 20px; 
+    
+}
+
+#container-welcome {
+    max-width: 50%; 
+}
+#container-welcome p{
+    color: #FFFFFF;
+    font-size: 2em;
+}
+#btn-2{
+    background-color: #CB4F57;
+    color: #FCF4B6;
+    width: 240px;
+    height: 48px;
+}
+#image-welcome img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+section {
+    text-align: center; 
+    width: 100%; 
+    margin: 20px 0; 
+}
+
+footer {
+    text-align: center; 
+    padding: 20px; 
+    background-color: #f8f9fa; 
+}
