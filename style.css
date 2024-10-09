@@ -4,6 +4,7 @@ body {
     margin: 0;
     height: 100%;
     overflow: hidden;
+    
   }
   
   main > section {
@@ -25,6 +26,8 @@ body {
     align-items: center;
     padding: 10px 20px;
     color: #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 1.5px;
   }
   
   #logo {
@@ -73,6 +76,7 @@ body {
     color: #fcf4b6;
     font-size: 3.5em;
     white-space: nowrap;
+    
   }
   
   .h2color {
@@ -126,20 +130,20 @@ body {
     display: flex;
     justify-content: space-between;
     list-style: none;
-}
-.imgList img{
+    }
+    .imgList img{
     padding: 10px ;
     margin-right:10px #D9D9D9;
-}
+    }
   
   .sectionFeatures {
     background-color: #fcf4b6;
     text-align: center;
     color: #331436;
-  }
+    }
   #h2Featured{
     font-size: 2em;
-  }
+    }
   #btn-4{
     margin-left: auto;
     padding: 10px 20px;
@@ -150,7 +154,7 @@ body {
     cursor: pointer;
     width: 240px;
     height: 48px;
-  }
+    }
   #tools {
     display: flex;
     justify-content: center;
@@ -166,9 +170,9 @@ body {
     inline-size: 48px;
     }
     .login-container{
-        width: 100%;
+        /* width: 100%;
         max-width: 1200px;
-        padding: 20px;
+        padding: 20px; */
         display: flex;
         align-items: center;
         font-size: 2em;
@@ -182,9 +186,6 @@ body {
         margin: 100px;
         
     }
-    #divsub2{
-        background-color: #fcf4b6;
-    }
     #principalsub{
         display: flex;
         justify-content: center;
@@ -193,11 +194,68 @@ body {
     }
     #divsub2 h5{
         margin: 0;
+        
     }
     .description{
         font-size: 16px;
         color: #0000008f;
+        
     }
+    .dadosLogin{
+        width: 496px;
+        height: 20px;
+    }
+    #inscreva-se{
+        list-style-type: none;
+    }
+    #btnSubscribe{
+        margin-left: auto;
+        padding-top: ;
+        padding: 10px 20px;
+        background-color: #331436;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 240px;
+        height: 48px;
+        
+    }
+    .footer {
+        display: flex; /* Faz com que os itens do footer fiquem em linha */
+        align-items: center; /* Alinha verticalmente os itens */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+        text-align: center; /* Centraliza o texto */
+        padding: 20px; /* Espaçamento interno */
+        background-color: #f1f1f1; /* Cor de fundo do footer */
+        background-color: #331436;
+    }
+    
+    .social-icons {
+        margin-right: 20px; /* Espaço entre ícones e texto */
+    }
+    
+    .social-icons a {
+        margin: 0 10px; /* Espaçamento entre os ícones */
+        color: #FFFFFF;
+    }
+    
+    .social-icons img {
+        width: 40px; /* Ajuste o tamanho dos ícones */
+        height: auto;
+        background-color: #FFFFFF;
+        border-radius: 30px;
+        inline-size:10px;
+        padding: 10px;
+    }
+    
+    .footer p {
+        margin: 0 10px; /* Espaçamento entre os parágrafos */
+        color: #FFFFFF;
+    }
+   
+    
+    
         
 
     
