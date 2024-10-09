@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f4f8;
+}
+
+header {
+    background-color: #331436;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Para distribuir logo e nav */
+    align-items: center;
+    
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 50px; /* Tamanho da logo */
+    height: 50px; /* Tamanho da logo */
+    margin-right: 10px; /* Espaço entre a logo e o título */
+}
+
+h1 {
+    margin: 0;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px; /* Espaço entre os itens da navbar */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Espaço à esquerda da barra de pesquisa */
+}
+
+.search {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.kanban {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    color: #331436;
+}
+
+.kanban-column {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 10px;
+    width: 20%;
+    margin-right: 75px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-column:last-child {
+    margin-right: 0;
+}
+
+.kanban-cards {
+    margin-top: 10px;
+}
+
+.kanban-card {
+    background-color: #F8F2FF;
+    border: 1px solid #331436;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative; /* Para permitir posicionamento absoluto da data */
+}
+
+.due-date {
+    position: absolute; /* Posiciona a data no canto superior direito */
+    top: 10px;
+    right: 10px;
+    font-size: 0.8em;
+    color: #555;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px; /* Ajusta o espaço após a prioridade e o título */
+}
+
+.priority {
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    display: block; /* Faz o span ocupar toda a largura do card */
+    margin-bottom: 10px; /* Espaço entre a prioridade e o título */
+    width: 35px;
+    height: 15px;
+    text-align: center;
+}
+
+.high {
+    background-color: #CB4F57; /* Red */
+    color: #7A1745;
+    border: solid #7A1745;
+    
+}
+
+.medium {
+    background-color: #EB9961; /* Orange */
+    color: #CB4F57;
+    border: solid #CB4F57;
+}
+
+.low {
+    background-color: #FCF4B6; /* Green */
+    color: #EB9961;
+    border: solid #EB9961;
+}
+
+.user-icons {
+    display: flex;
+    align-items: center;
+}
+
+
+.user-icons span {
+    color: white;
+    border-radius: 60%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+.gm{
+    background-color: #AF4A00;
+}
+.it {
+    background-color: #801E8F;
+}
+.js{
+    background-color: #2E4B83;
+}
+.ns{
+    background-color: #D92B93;
+}
+.lc{
+    background-color: #1A712D;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em; /* Tamanho do X */
+    cursor: pointer;
+}
+.footer {
+    display: flex; /* Faz com que os itens do footer fiquem em linha */
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f1f1f1; /* Cor de fundo do footer */
+    background-color: #331436;
+    padding: 5%;
+}
+
+.social-icons {
+    margin-right: 20px; /* Espaço entre ícones e texto */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    color: #FFFFFF;
+}
+
+.social-icons img {
+    width: 40px; /* Ajuste o tamanho dos ícones */
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    inline-size:10px;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 0 10px; /* Espaçamento entre os parágrafos */
+    color: #FFFFFF;
+}
+
