@@ -1,0 +1,126 @@
+body {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    max-width: 1440px;
+    max-height: 900px;
+    
+}
+
+#cabecalho {
+    background-color: #331436;
+    display: flex;
+    justify-content: flex-start; /* Alinha logo e título à esquerda */
+    align-items: center;
+    padding: 10px 20px; 
+    color: #ffffff;
+}
+
+#logo {
+    width: 50px; 
+    height: auto;
+    margin-right: 20px; 
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-wrap: wrap;
+    color: #331436;
+}
+.content-info{
+    width: 450px;
+    height: 96px;
+}
+.content-loguin{
+    width: 450px;
+    height: 248;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.content-login-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+.input{
+    padding: 1px;
+    height: 40px;
+    border-radius: 5px;
+    width: 520px;
+    font-size: 14px;
+    border: 3px solid #00000010;
+    
+}
+.input:focus{
+    border-color: #1b74ee;
+    box-shadow: #1b74ee;
+    
+}
+.btn-loguin{
+    padding: 15px;
+    height: 48px;
+    width: 240px;
+    background-color: #331436;
+    color: #FFFFFF;
+    border-radius: 10px ;
+    font-size: 1rem;
+    margin-top: 0;
+    
+}
+.content-login-box a{
+    margin-right: 64%;
+}
+.content-login-box h5{
+    width: 520px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+
+.footer {
+    display: flex; /* Faz com que os itens do footer fiquem em linha */
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f1f1f1; /* Cor de fundo do footer */
+    background-color: #331436;
+    padding: 5%;
+}
+
+.social-icons {
+    margin-right: 20px; /* Espaço entre ícones e texto */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    color: #FFFFFF;
+}
+
+.social-icons img {
+    width: 40px; /* Ajuste o tamanho dos ícones */
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    inline-size:10px;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 0 10px; /* Espaçamento entre os parágrafos */
+    color: #FFFFFF;
+}
+

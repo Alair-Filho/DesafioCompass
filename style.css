@@ -2,7 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    height: 100%;
+    height: 2563px;
+    width: 1440px;
     overflow: hidden;
     
   }
@@ -229,6 +230,7 @@ body {
         padding: 20px; /* Espaçamento interno */
         background-color: #f1f1f1; /* Cor de fundo do footer */
         background-color: #331436;
+        padding: 5%;
     }
     
     .social-icons {
