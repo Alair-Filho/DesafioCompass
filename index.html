@@ -83,16 +83,18 @@
                         <p>Stay informed with our lastet updates</p>
                     </div>
                     <div id="divsub2">
-                        <form action="/login" method="post">
+                        <form id="form" action="/login" method="post"> 
                             <ul id="inscreva-se">
                                 <li>
                                     <h5>Email</h5>
-                                    <input class="dadosLogin" type="email" name="email" placeholder="Enter your email" required>
-                                    <div class="description">We promisse not to spam</div>
+                                    <input class="dadosLogin" type="email" name="email" placeholder="Enter your email" id="email">
+                                    <div class="description">We promise not to spam</div>
+                                    <div id="emailError" class="error"></div>
                                 </li>
                                 <li>
                                     <h5>Name</h5>
-                                    <input class="dadosLogin" type="text" name="name" placeholder="Enter your name" required>
+                                    <input class="dadosLogin" type="text" name="name" placeholder="Enter your name" id="name">
+                                    <div id="nameError" class="error"></div>
                                 </li>
                                 <li>
                                     <button id="btnSubscribe" type="submit">Subscribe</button>

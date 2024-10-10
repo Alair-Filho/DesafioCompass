@@ -267,13 +267,17 @@ main > section {
   background-color: #FFFFFF;
   border-radius: 30px;
   padding: 10px;
-  inline-size: 1em;
+  inline-size: 0.8em;
   
 }
 
 .footer p {
   margin: 0 10px; 
   color: #FFFFFF;
+}
+.error {
+  color: red;
+  margin-top: 5px;
 }
 
 /* Adicionando consultas de mídia para dispositivos menores */

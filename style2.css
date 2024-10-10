@@ -1,20 +1,16 @@
 body {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh; */
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #FFFFFF;
-    max-width: 1440px;
-    max-height: 900px;
-    
+    display: flex;
+    flex-direction: column; /* Adicionado para organizar o layout */
+    height: 100vh; /* Altura total da tela */
 }
 
 #cabecalho {
     background-color: #331436;
     display: flex;
-    justify-content: flex-start; /* Alinha logo e título à esquerda */
+    justify-content: flex-start; 
     align-items: center;
     padding: 10px 20px; 
     color: #ffffff;
@@ -25,27 +21,30 @@ body {
     height: auto;
     margin-right: 20px; 
 }
-.content{
+
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    flex-grow: 1; /* Faz com que o conteúdo ocupe o espaço restante */
     flex-wrap: wrap;
     color: #331436;
 }
-.content-info{
+
+.content-info {
     width: 450px;
     height: 96px;
 }
-.content-loguin{
+
+.content-loguin {
     width: 450px;
-    height: 248;
+    height: 248px; /* Corrigido para incluir a unidade */
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
-.content-login-box{
+
+.content-login-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,36 +52,39 @@ body {
     padding: 1rem;
     width: 100%;
 }
-.input{
+
+.input {
     padding: 1px;
     height: 40px;
     border-radius: 5px;
     width: 520px;
     font-size: 14px;
     border: 3px solid #00000010;
-    
 }
-.input:focus{
+
+.input:focus {
     border-color: #1b74ee;
     box-shadow: #1b74ee;
-    
 }
-.btn-loguin{
+
+.btn-loguin {
     padding: 15px;
     height: 48px;
     width: 240px;
     background-color: #331436;
     color: #FFFFFF;
-    border-radius: 10px ;
+    border-radius: 10px;
     font-size: 1rem;
-    margin-top: 0;
     cursor: pointer;
+    margin-right: 65%;
     
 }
-.content-login-box a{
+
+.content-login-box a {
     margin-right: 64%;
 }
-.content-login-box h5{
+
+.content-login-box h5 {
     width: 520px;
     height: 20px;
     margin: 0;
@@ -90,38 +92,35 @@ body {
     font-size: 20px;
 }
 
-
 .footer {
-    display: flex; /* Faz com que os itens do footer fiquem em linha */
-    align-items: center; /* Alinha verticalmente os itens */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Espaçamento interno */
-    background-color: #f1f1f1; /* Cor de fundo do footer */
-    background-color: #331436;
-    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; 
+    background-color: #331436; /* Mantenha a cor de fundo */
+    color: #FFFFFF; /* Para o texto do footer */
 }
 
 .social-icons {
-    margin-right: 20px; /* Espaço entre ícones e texto */
+    margin-right: 20px; 
 }
 
 .social-icons a {
-    margin: 0 10px; /* Espaçamento entre os ícones */
+    margin: 0 10px; 
     color: #FFFFFF;
 }
 
 .social-icons img {
-    width: 40px; /* Ajuste o tamanho dos ícones */
+    width: 40px; 
     height: auto;
     background-color: #FFFFFF;
     border-radius: 30px;
-    inline-size:10px;
     padding: 10px;
+    inline-size: 0.8em;
 }
 
 .footer p {
-    margin: 0 10px; /* Espaçamento entre os parágrafos */
+    margin: 0 10px; 
     color: #FFFFFF;
 }
-

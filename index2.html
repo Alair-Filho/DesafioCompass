@@ -11,30 +11,32 @@
         <img id="logo" src="img/logo 1.png" alt="logo marca">
         <h1>Project Manager</h1>
     </header>
-    <div class="content">
+    <article class="content">
         <div class="content-info">
             <h1>Login Information</h1>
             <h3>Enter your credentials</h3>
         </div>
         <div class="content-loguin">
-            <form class="content-login-box">
+            <form class="content-login-box" id="loginForm">
                 <h5>Email</h5>
-                <input type="text" class="input" placeholder="Enter your email">
+                <input type="text" class="input" id="email" placeholder="Enter your email">
                 <h5>Password</h5>
-                <input type="password" class="input" placeholder="Enter your password">
-                <a href="index3.html"><button class="btn-loguin">Login</button></a>
+                <input type="password" class="input" id="password" placeholder="Enter your password">
+                <button type="submit" class="btn-loguin">Login</button>
+                <div id="error-message" style="color: red; margin-top: 10px;"></div> <!-- Para exibir mensagens de erro -->
             </form>
         </div>
     </div>
     <footer class="footer">
         <div class="social-icons">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook 1.png" alt="facebook"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram 1.png" alt="instagram"></a>
-                    <a href="https://www.linkedin.com/in/alair-de-paula-filho-832ba9301/" target="_blank"> <img src="img/linkedin 1.png" alt="linkedin"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook 1.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram 1.png" alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/alair-de-paula-filho-832ba9301/" target="_blank"><img src="img/linkedin 1.png" alt="linkedin"></a>
         </div>
-                <p>© 2024 Project Manager. All rights reserved.</p>
-                <p>Privacy Policy</p>
-                <p>Terms of Service</p>
+        <p>© 2024 Project Manager. All rights reserved.</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Service</p>
     </footer>
+    <script src="main2.js"></script>
 </body>
 </html>
