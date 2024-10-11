@@ -1,5 +1,14 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "roboto";
+  src: url(Font/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "robotobold";
+  src: url(Font/Roboto/Roboto-Bold.ttf);
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: "roboto", serif;
     margin: 0;
     background-color: #f0f4f8;
 }
@@ -14,7 +23,6 @@ header {
     display: flex;
     justify-content: space-between; /* Para distribuir logo e nav */
     align-items: center;
-    
 }
 
 .logo-title {
@@ -83,10 +91,11 @@ h1 {
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 7px;
-    padding: 10px;
-    width: 20%;
+    padding: 1.5em;
+    width: 10%;
     margin-right: 75px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    height: 50em;
 }
 
 .kanban-column:last-child {
@@ -137,7 +146,6 @@ h1 {
     background-color: #CB4F57; /* Red */
     color: #7A1745;
     border: solid #7A1745;
-    
 }
 
 .medium {
@@ -154,34 +162,41 @@ h1 {
 
 .user-icons {
     display: flex;
+    flex-wrap: wrap; /* Permite que os ícones se movam para a linha seguinte */
     align-items: center;
+    max-width: 100%; /* Garante que os ícones não ultrapassem a largura do card */
+    overflow: hidden; /* Oculta qualquer conteúdo que exceda o limite do contêiner */
 }
-
 
 .user-icons span {
     color: white;
-    border-radius: 60%;
-    width: 30px;
-    height: 30px;
+    border-radius: 50%; /* Círculo perfeito */
+    width: 25px; /* Reduzido para um tamanho mais compacto */
+    height: 25px; /* Reduzido para um tamanho mais compacto */
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 5px;
-    font-size: 0.9em;
+    margin: 2px; /* Espaço menor entre ícones */
+    font-size: 0.8em; /* Ajuste o tamanho da fonte */
 }
-.gm{
+
+.gm {
     background-color: #AF4A00;
 }
+
 .it {
     background-color: #801E8F;
 }
-.js{
+
+.js {
     background-color: #2E4B83;
 }
-.ns{
+
+.ns {
     background-color: #D92B93;
 }
-.lc{
+
+.lc {
     background-color: #1A712D;
 }
 
@@ -191,6 +206,7 @@ h1 {
     font-size: 1.5em; /* Tamanho do X */
     cursor: pointer;
 }
+
 .footer {
     display: flex; /* Faz com que os itens do footer fiquem em linha */
     align-items: center; /* Alinha verticalmente os itens */
@@ -216,12 +232,80 @@ h1 {
     height: auto;
     background-color: #FFFFFF;
     border-radius: 30px;
-    inline-size:0.8em;
+    inline-size: 0.8em;
     padding: 10px;
 }
+.social-icons img:hover{
+    transform: scale(1.5);
+  }
 
 .footer p {
     margin: 0 10px; /* Espaçamento entre os parágrafos */
     color: #FFFFFF;
+}
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .navbar li {
+        margin: 10px 0; /* Ajusta o espaço entre os itens */
+    }
+
+    .kanban {
+        flex-direction: column; /* Muda para coluna em vez de linha */
+        padding: 20px;
+    }
+
+    .kanban-column {
+        width: 100%; /* Largura total em dispositivos pequenos */
+        margin-right: 0; /* Remove a margem entre as colunas */
+        margin-bottom: 20px; /* Adiciona espaço entre colunas */
+    }
+
+    .kanban-card {
+        font-size: 0.9em; /* Ajusta o tamanho da fonte */
+    }
+
+    .search-container {
+        margin: 10px 0; /* Ajusta a margem da barra de pesquisa */
+    }
+
+    .search {
+        width: 100%; /* Faz a barra de pesquisa ocupar toda a largura */
+    }
+
+    .social-icons {
+        flex-direction: column; /* Organiza os ícones em coluna */
+    }
+}
+
+/* Responsividade para dispositivos muito pequenos */
+@media (max-width: 480px) {
+    .kanban-card {
+        padding: 8px; /* Diminui o padding do card */
+    }
+
+    .due-date {
+        font-size: 0.7em; /* Reduz o tamanho da data */
+    }
+
+    .priority {
+        font-size: 0.7em; /* Reduz o tamanho da prioridade */
+    }
+
+    .user-icons span {
+        width: 20px; /* Ícones menores */
+        height: 20px; /* Ícones menores */
+        font-size: 0.7em; /* Tamanho da fonte menor */
+    }
 }
 

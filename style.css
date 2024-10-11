@@ -1,9 +1,19 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "roboto";
+  src: url(Font/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "robotobold";
+  src: url(Font/Roboto/Roboto-Bold.ttf);
+}
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
   min-height: 100vh; 
   overflow-x: hidden; 
+  
 }
 
 main > section {
@@ -28,6 +38,7 @@ main > section {
   align-items: center;
   padding: 10px 20px;
   color: #ffffff;
+  font-family: "roboto",serif;
 }
 
 #logo {
@@ -46,6 +57,12 @@ main > section {
   cursor: pointer;
   width: 240px;
   height: 48px;
+  font-family: "roboto",serif;
+}
+#btn:hover {
+  background-color: #fcf4b6; 
+  color: #331436; 
+  transform: scale(1.05);
 }
 
 .btnLogin {
@@ -56,24 +73,27 @@ main > section {
   display: flex;
   align-items: center;
   background-color: #7a1745;
-  padding: 0;
+  padding: 2em;
+  margin: 0;
 }
 
 .welcome-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
 }
 
 .welcome-section img {
-  padding: 15px;
+  padding: 1em;
 }
 
 .colorh2 {
   color: #fcf4b6;
   font-size: 3.5em;
   white-space: nowrap;
+  font-family: "robotobold",serif;
 }
 
 .h2color {
@@ -81,13 +101,16 @@ main > section {
   white-space: nowrap;
   flex: 1;
   overflow: visible;
+  font-family: "robotobold",serif;
 }
 
 #container-welcome p {
   color: #ffffff;
-  font-size: 1em;
+  font-size: 1.6em;
   padding: 0;
-  text-align: justify;
+  font-family:'roboto',serif;
+  justify-content: center;
+  
 }
 
 #btn-2 {
@@ -96,22 +119,35 @@ main > section {
   width: 240px;
   height: 48px;
   cursor: pointer;
+  font-family: "roboto",serif;
+  
+}
+#btn-2:hover {
+  background-color: #fcf4b6; 
+  color: #331436; 
+  transform: scale(1.05);
 }
 
 #container-manage-2 {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 #container-manage h2 {
   color: #000000;
   font-size: 3em;
+  font-family: "robotobold",serif ;
 }
-
+#container-manage p{
+  font-family: "roboto",serif;
+  text-align: justify;
+  font-size: 1.2em;
+}
 .manage {
   justify-content: center;
   align-items: center;
+  
 }
 
 #btn-3 {
@@ -124,6 +160,12 @@ main > section {
   cursor: pointer;
   width: 240px;
   height: 48px;
+  font-family: "roboto",serif;
+}
+#btn-3:hover {
+  background-color: #57225c; 
+  color: #FFFFFF; 
+  transform: scale(1.05);
 }
 
 .imgList {
@@ -149,6 +191,7 @@ main > section {
 
 #h2Featured {
   font-size: 2em;
+  font-family: "robotobold",serif;
 }
 
 #btn-4 {
@@ -161,6 +204,12 @@ main > section {
   cursor: pointer;
   width: 240px;
   height: 48px;
+  font-family: "roboto",serif;
+}
+#btn-4:hover {
+  background-color: #57225c; 
+  color: #FFFFFF ;
+  transform: scale(1.05);
 }
 
 #tools {
@@ -172,6 +221,7 @@ main > section {
   padding: 0;
   margin: 0;
   margin-top: 10%;
+  
 }
 
 #tools img {
@@ -180,6 +230,18 @@ main > section {
   border-radius: 50%;
   padding: 20px;
   cursor: pointer;
+}
+#tools img:hover {
+  background-color: #57225c; 
+  color: #FFFFFF ;
+  transform: scale(1.05);
+}
+#tools h3{
+  font-family: "roboto",serif;
+  
+}
+#tools p{
+  font-family: "roboto",serif;
 }
 
 .login-container {
@@ -193,6 +255,7 @@ main > section {
 #divSubscribe {
   margin: 100px;
   padding: 0;
+  font-family: "robotobold",serif;
 }
 
 #principalsub {
@@ -201,6 +264,10 @@ main > section {
   align-items: center;
   width: 100%;
   
+}
+#divsub2{
+  font-family: "roboto",serif;
+
 }
 
 #divsub2 h5 {
@@ -242,6 +309,11 @@ main > section {
   height: 48px;
   
 }
+#btnSubscribe:hover {
+  background-color: #57225c; 
+  color: #FFFFFF ;
+  transform: scale(1.05);
+}
 
 .footer {
   display: flex; 
@@ -268,32 +340,53 @@ main > section {
   border-radius: 30px;
   padding: 10px;
   inline-size: 0.8em;
-  
+}
+.social-icons img:hover{
+  transform: scale(1.5);
 }
 
 .footer p {
   margin: 0 10px; 
   color: #FFFFFF;
+  font-family: "robote",serif;
 }
 .error {
   color: red;
   margin-top: 5px;
 }
 
-/* Adicionando consultas de mídia para dispositivos menores */
 @media (max-width: 768px) {
+  body {
+      padding: 10px; 
+  }
+
   #cabecalho {
-      flex-direction: column; 
-      align-items: flex-start; 
+      flex-direction: column;
+      align-items: center; 
+      text-align: center; 
+  }
+
+  #logo {
+      margin-bottom: 10px; 
   }
 
   .welcome-section {
       flex-direction: column; 
+      text-align: center; 
   }
 
-  #btn, #btn-2, #btn-3, #btn-4, #btnSubscribe {
+  .welcome-section img {
       width: 100%; 
-      max-width: 240px; 
+      height: auto; 
+  }
+
+  .welcome-content {
+      width: 100%; 
+      padding: 0 10px; 
+  }
+
+  #container-manage-2 {
+      padding: 0 10px;
   }
 
   #tools {
@@ -301,8 +394,37 @@ main > section {
       align-items: center; 
   }
 
+  #tools li {
+      margin-bottom: 20px; 
+      text-align: center; 
+
   .login-container {
       flex-direction: column; 
-      align-items: center;
+      align-items: center; 
+      padding: 0 10px; 
   }
+
+  .dadosLogin {
+      width: 100%; 
+  }
+
+  #inscreva-se li {
+      width: 100%; 
+      margin-bottom: 15px; 
+  }
+
+  #btnSubscribe {
+      width: 100%; 
+  }
+
+  .footer {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .social-icons {
+      margin: 10px 0; 
+  }
+}
+
 }
