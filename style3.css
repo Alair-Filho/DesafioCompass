@@ -169,7 +169,7 @@ h1 {
 }
 
 .user-icons span {
-    color: #FFFFFF;
+    color: white;
     border-radius: 50%; 
     width: 25px; 
     height: 25px; 
@@ -243,7 +243,7 @@ h1 {
     margin: 0 10px; 
     color: #FFFFFF;
 }
-/* Responsividade para dispositivos menores */
+
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
@@ -288,7 +288,7 @@ h1 {
     }
 }
 
-/* Responsividade para dispositivos muito pequenos */
+
 @media (max-width: 480px) {
     .kanban-card {
         padding: 8px; 

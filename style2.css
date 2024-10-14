@@ -48,6 +48,8 @@ body {
 }
 .content-info h1{
     font-family: "robotobold",serif;
+    font-size: 2.5em;
+    
 }
 
 .content-loguin {
@@ -91,6 +93,7 @@ body {
     border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
+    margin-right: 62%;
 }
 .btn-loguin:hover{
     background-color: #57225c; 
