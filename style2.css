@@ -78,8 +78,8 @@ body {
 }
 
 .input:focus {
-    border-color: #1b74ee;
-    box-shadow: #1b74ee;
+    border-color: #331436;
+    box-shadow:   #331436;
 }
 
 .btn-loguin {
@@ -150,41 +150,43 @@ body {
 /* Estilos responsivos */
 @media (max-width: 768px) {
     body {
-        padding: 10px; 
+        padding: 10px;
+    } 
 
     #cabecalho {
         flex-direction: column; 
-        align-items: center; 
+        align-items: center;
+    }
 
     .content-info, .content-loguin {
-        width: 90%; /* Aumentar a largura para melhor visualização em dispositivos móveis */
-        max-width: none; /* Remove o limite máximo de largura */
-        padding-top: 5%; /* Ajusta o padding superior */
-        text-align: center; /* Centraliza o texto */
+        width: 90%; 
+        max-width: none; 
+        padding-top: 5%; 
+        text-align: center; 
     }
 
     .content-login-box {
-        width: 100%; /* Usa 100% da largura disponível */
+        width: 100%; 
     }
 
     .input {
-        width: 100%; /* Ajusta a largura do campo de entrada para 100% */
-        max-width: none; /* Remove o limite máximo de largura */
+        width: 100%; 
+        max-width: none; 
     }
 
     .btn-loguin {
-        width: 100%; /* Botão ocupa 100% da largura */
-        max-width: none; /* Remove o limite máximo de largura */
+        width: 100%; 
+        max-width: none; 
     }
 
     .footer {
-        padding: 10px 0; /* Ajusta padding no footer */
-        flex-direction: column; /* Permite que os itens do footer fiquem empilhados */
+        padding: 10px 0; 
+        flex-direction: column; 
     }
 
     .social-icons {
-        justify-content: center; /* Centraliza os ícones sociais */
-        margin-top: 10px; /* Adiciona margem superior */
+        justify-content: center; 
+        margin-top: 10px; 
     }
 }
 

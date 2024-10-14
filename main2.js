@@ -1,15 +1,15 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita o envio do formulário
+    event.preventDefault(); 
 
-    // Obter valores dos campos
+    
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     const errorMessage = document.getElementById('error-message');
 
-    // Limpar mensagens de erro anteriores
+    
     errorMessage.textContent = '';
 
-    // Validar email
+    
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email) {
         errorMessage.textContent = 'O campo email é obrigatório.';
@@ -19,12 +19,12 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         return;
     }
 
-    // Validar senha
+    
     if (!password) {
         errorMessage.textContent = 'O campo senha é obrigatório.';
         return;
     }
 
-    // Se tudo estiver correto, redirecionar
+    
     window.location.href = 'index3.html';
 });

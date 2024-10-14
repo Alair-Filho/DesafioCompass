@@ -1,15 +1,15 @@
 document.getElementById('form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário
+    event.preventDefault(); 
 
-    // Limpa mensagens de erro
+    
     document.getElementById('emailError').textContent = '';
     document.getElementById('nameError').textContent = '';
 
-    // Captura os valores dos campos
+    
     const email = document.getElementById('email').value;
     const name = document.getElementById('name').value;
 
-    // Validação do email usando RegEx
+    
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let valid = true;
 
@@ -26,7 +26,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
         valid = false;
     }
 
-    // Se tudo estiver válido, armazena os dados no LocalStorage
+   
     if (valid) {
         const subscriber = {
             email: email,
@@ -34,7 +34,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
         };
         localStorage.setItem('subscriber', JSON.stringify(subscriber));
         alert('Inscrição realizada com sucesso!');
-        // Opcional: limpar o formulário
+        
         document.getElementById('form').reset();
     }
 });
